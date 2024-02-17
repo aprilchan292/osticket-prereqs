@@ -30,7 +30,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <h2>Installation Steps</h2>
-
+<p><h4>1. Start by going to https://portal.azure.com/ and make a resource group. Then, create a Windows 10 virtual machine (VM) with 2-4 virtual CPUs.</h4></p>
+<p><h4>2. Install/Enable IIS on Windows with CGI and Common HTTP Features enabled.</h4></p>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
