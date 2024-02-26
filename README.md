@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <h2>Installation Steps</h2>
-<p><h3>1. Create a resource group and a virtual machine in azure </h3></p>
+<h3>1. Create a resource group and a virtual machine in azure </h3>
 <ul>
   <li>Go to https://portal.azure.com/ and sign in</li>
   <li>Choose or create a resource group</li>
@@ -40,7 +40,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   <li>Create Username/Password</li>
 </ul>
 
-<p><h3>2. Install/Enable IIS on Windows with CGI and Common HTTP Features enabled</h3></p>
+<h3>2. Install/Enable IIS on Windows with CGI and Common HTTP Features enabled</h3>
 <p> + In Windows Virtual Machine (VM), go to Control Panel > Programs > Programs & Features, and Turn Windows features on and off</p>
 <ul>
   <li> Check the box Internet Information Services </li>
@@ -62,10 +62,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 <h3>3. Install PHP Manager for IIS</h3>
+  <ul>
+    <li>Download "PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)" from the installation files.</li>
+    <li>Run the installer and follow the on-screen instructions to complete the installation.</li>
+  </ul>
 <img src="https://i.imgur.com/aw5LWgC.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-
 </p>
 <br />
 
@@ -73,43 +74,40 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
   <h3>4. Install Rewrite Module</h3>
+  <ul>
+    <li>Download "Rewrite Module (rewrite_amd64_en-US.msi)" from the installation files.</li>
+    <li>Run the installer and follow the on-screen instructions to complete the installation.</li>
+  </ul>
 <img src="https://i.imgur.com/7VxO3Y5.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
 <p>
-<h3>5. Setup PHP </h3>
-<li>Create a directory at C:\PHP.</li>
-<img src="https://i.imgur.com/B2EESJF.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<h3>5. Create Directory for PHP </h3>
+<li>Create a directory C:\PHP.</li>
 <li>Download PHP 7.3.8 and unzip its contents into C:\PHP</li>
 <li>If prompted, choose to keep the file</li>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/B2EESJF.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 
 <p>
 <h3>6. Install VC_redist.x86.exe </h3>
+  <li>Download and install "VC_redist.x86.exe" from the installation files.</li>
 <img src="https://i.imgur.com/Qq84XiA.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
 
 <p>
 <h3>7. Install MySQL 5.5.62</h3>
+  <ul>
+    <li>Download "MySQL 5.5.62 (mysql-5.5.62-win32.msi)" from the installation files.</li>
+    <li>Run the installer, choose "Typical Setup", and follow the prompts.</li>
+    <li>Launch Configuration Wizard after install, choose "Standard Configuration", set the root password</li>
+  </ul>
 <img src="https://i.imgur.com/Uj77jod.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
 
 
@@ -123,98 +121,97 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <li> Register PHP from within IIS</li>
 <img src="https://i.imgur.com/3pxxYvn.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
 
 
 <p>
 <h3>9. Reload IIS</h3>
+  <li>Stop and start the IIS server.</li>
 <img src="https://i.imgur.com/Ga7qmco.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
 
 <p>
 <h3>10. Install os ticket v1.15.8</h3>
+  <ul>
+    <li>Download osTicket from the Installation Files Folder.</li>
+    <li>Extract and copy the "upload" folder to "C:\inetpub\wwwroot".</li>
+    <li>Rename the "upload" folder to "osTicket" within "C:\inetpub\wwwroot".</li>
+  </ul>
 <img src="https://i.imgur.com/lfWHQ7Y.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
 
 
 <p>
-<h3>11.Reload IIS Again</h3>
+<h3>11.Reload IIS Again/Configure osTicket in IIS</h3>
+  <ul>
+    <li>Go to sites -> Default -> osTicket.</li>
+    <li>On the right, click "Browse *:80".</li>
+  </ul>
 <img src="https://i.imgur.com/Ga7qmco.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h3>12. Enable PHP Extensions </h3>
+  <ul>
+    <li>Go back to IIS, sites -> Default -> osTicket.</li>
+    <li>Double-click PHP Manager.</li>
+    <li>Click "Enable or disable an extension".</li>
+    <li>Enable: php_imap.dll, php_intl.dll, php_opcache.dll.</li>
+  </ul>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 
 <p>
-<h3>12. Configure PHP Extensions </h3>
+<h3>13. Rename and Assign Permissions to ost-config.php </h3>
+  <ul>
+    <li>Rename: ost-config.php from "C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php" to 
+    "C:\inetpub\wwwroot\osTicket\include\ost-config.php".</li>
+    <li>Disable inheritance, remove all permissions, then assign Everyone with all permissions.</li>
+  </ul>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h3>14. Continue Setting up osTicket in the browser </h3>
+  <ul>
+    <li>Navigate to the osTicket installation page.</li>
+    <li>Provide necessary details like Helpdesk name, default email, etc.</li>
+    <li>Continue with the setup process.</li>
+  </ul>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 
 <p>
-<h3>13. Rename ost-config.php</h3>
+<h3>15. Install HeidiSQL </h3>
+  <ul>
+    <li>Download and install HeidiSQL from the installation files.</li>
+    <li>Open HeidiSQL and create a new session.</li>
+    <li>Connect to the session and create a database called "osTicket".</li>
+  </ul>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
 
 <p>
-<h3>14. Assign Permissions </h3>
+<h3>16. Continue Setting up osTicket in the browser </h3>
+  <ul>
+    <li>Provide MySQL database, username, and password details.</li>
+    <li>Click "Install Now!" to complete the setup.</li>
+  </ul>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-<p>
-<h3>15. Continue Setting up osTicket in the browser </h3>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-<p>
-<h3>16. Install HeidiSQL </h3>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-<p>
-<h3>17. Continue Setting up osTicket in the browser </h3>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
