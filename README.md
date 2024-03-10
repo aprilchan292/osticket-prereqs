@@ -163,7 +163,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>Click "Enable or disable an extension".</li>
     <li>Enable: php_imap.dll, php_intl.dll, php_opcache.dll.</li>
   </ul>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/jybnWSr.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -173,9 +173,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   <ul>
     <li>Rename: ost-config.php from "C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php" to 
     "C:\inetpub\wwwroot\osTicket\include\ost-config.php".</li>
+    <img src="https://i.imgur.com/HJ2nCZe.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
     <li>Disable inheritance, remove all permissions, then assign Everyone with all permissions.</li>
   </ul>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/tATCuj0.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/NkvHQDx.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -188,7 +190,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>Provide necessary details like Helpdesk name, default email, etc.</li>
     <li>Continue with the setup process.</li>
   </ul>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/s1FXmvh.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -197,10 +199,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h3>15. Install HeidiSQL </h3>
   <ul>
     <li>Download and install HeidiSQL from the installation files.</li>
+    <img src="https://i.imgur.com/grI1VyV.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
     <li>Open HeidiSQL and create a new session.</li>
     <li>Connect to the session and create a database called "osTicket".</li>
   </ul>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/rdCIO4h.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -211,12 +214,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>Provide MySQL database, username, and password details.</li>
     <li>Click "Install Now!" to complete the setup.</li>
   </ul>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DO7foG9.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 
-
+<p>
 <h3> CONGRATULATIONS! </h3>
-<img src="https://i.imgur.com/44dxRXx.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <li>Verify the installation by browsing to the help desk login page</li>
+<img src="https://i.imgur.com/44dxRXx.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>DON'T FORGET CLEAN UP</h3>
+<li>Delete: C:\inetpub\wwwroot\osTicket\setup</li>
+<li>Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php</li>
